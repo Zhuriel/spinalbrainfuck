@@ -1,8 +1,8 @@
-#spinal brainfuck
+# spinal brainfuck
 
 the most metal processor name. yes i made this just for that joke.
 
-##how to use
+## how to use
 to run tests: `sbt test`
 
 to run any brainfuck program: 
@@ -15,7 +15,7 @@ to generate vhdl: `sbt "runMain SpinalBrainFuck"`
 
 (actual hardware demonstration coming eventually maybe)
 
-##license & credits
+## license & credits
 hardware description (all files in `src/main`) licensed under wtfpl
 
 brainfuck test code by daniel b cristofani from brainfuck.org licensed under CC BY-SA 4.0
