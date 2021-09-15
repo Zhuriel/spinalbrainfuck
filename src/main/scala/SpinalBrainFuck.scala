@@ -101,3 +101,8 @@ class SpinalBrainFuck (
   } // end skip mode switch
 }
 
+object SpinalBrainFuck {
+  def main(args: Array[String]): Unit = {
+    SpinalVhdl(new SpinalBrainFuck())
+  }
+}

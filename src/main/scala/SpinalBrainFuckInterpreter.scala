@@ -3,6 +3,7 @@ import spinal.core.sim._
 import spinal.sim._
 
 import scala.collection.mutable.StringBuilder
+import scala.io.Source
 
 object SpinalBrainFuckInterpreter  {
   def run (program : String, inputs : String = "", timeout : Int = 1000000) : String = {
@@ -66,7 +67,11 @@ object SpinalBrainFuckInterpreter  {
   }
 
   def main(args: Array[String]): Unit = {
+    val programFile = io.Source.fromFile(args.head)
+    val program = try programFile.mkString finally programFile.close()
+    val input = args.tail mkString " "
 
+    println(run(program, input))
   }
 }
 
